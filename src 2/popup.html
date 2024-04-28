@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Expl<b>AI</b>ner</h1>
+      <span id="loading-spinner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display: none;"></span>
+      <button id="autofill-button" class="btn btn-primary">Explain News</button>
+    </div>
+    <div class="container">
+      <p>Click the button above to simplify the news article in the active window.</p>
+    </div> 
+    <hr class="rounded">
+    <div class="container">
+      <div id="result">
+        <hr class="solid">
+      </div>
+    </div>
+    <div id="error-message" class="alert alert-danger mt-3" style="display: none;">
+      Please try again later or try another news article.
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <h1>Test Page for Flask Application</h1>
+
+    <h2>Login</h2>
+    <form action="/login" method="post">
+        Email: <input type="text" name="email"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <h2>Create Account</h2>
+    <form action="/create_account" method="post">
+        Email: <input type="text" name="email"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Create Account">
+    </form>
+
+    <h2>Forgot Password</h2>
+    <form action="/forgot_password" method="post">
+        Email: <input type="text" name="email"><br>
+        <input type="submit" value="Forgot Password">
+    </form>
+
+    <h2>Explain News</h2>
+    <form action="/explain_news" method="post">
+        HTML String: <textarea name="html_string"></textarea><br>
+        <input type="submit" value="Explain News">
+    </form>
+
+    <h2>Other Endpoints</h2>
+    <ul>
+        <li><a href="/test">Test</a></li>
+        <li><a href="/logout">Logout</a></li>
+    </ul>
+</body>
+</html>
